@@ -1,0 +1,6 @@
+- name: ~/
+  link: /
+- name: $whoami
+  link: /about.html
+- name: $ls -al All-Posts
+  link: /blog.html

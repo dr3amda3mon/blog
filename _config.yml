@@ -1,0 +1,17 @@
+title: dr3amda3mon's dungeon of dreams
+email: al.9000log@protonmail.com
+author: dr3amda3mon
+description: >-
+  cybersecurity blog and ctf writeups
+baseurl: ""
+url: https://dr3amda3mon.github.io
+github_username:  dr3amda3mon
+
+show_downloads: false
+google_analytics: UA-161626775-1
+
+theme: jekyll-theme-hacker
+plugins:
+  - jekyll-paginate
+  #- jekyll-feed
+paginate: 5
