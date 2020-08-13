@@ -6,8 +6,6 @@ categories: [writeups, hackthebox, linux]
 author: dr3amda3mon
 ---
 
-this was one of the most fun boxes ive pwned to date
-
 ```
 10.10.10.200
 ```
