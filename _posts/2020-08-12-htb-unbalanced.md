@@ -4,7 +4,7 @@ title: "HTB Unbalanced"
 date: 2020-08-12 00:30
 categories: [writeups, hackthebox, linux]
 author: dr3amda3mon
-key: "6HrNX81SE9mBkmNY$oIh9jCV496j4WOURXy/NYMp0cKFLavEAnpsK/KF.spP/yv8ONiIphzBsi3YnIVkFFgFEAak5yMaTi5zbMwIYw1"
+key: "6HrNX81SE9mBkmNY$oIh9jCV496j4WOURXy"
 ---
 
 this was one of the most fun boxes ive pwned to date
