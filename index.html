@@ -1,22 +1,48 @@
 ---
 layout: default
-title: Home
+title: 0xDr3am's Cybersecurity Blog
 ---
-<head><link href='https://dr3amda3mon.github.io/feed.xml' rel='alternate' type='application/atom+xml'></head>
-<h1>Home</h1>
-<br>
-<center>
-<img src="/assets/images/banner.gif">
-</center>
-<br>
-<h1>Latest Posts</h1>
-<ul>
-  {% for post in site.posts limit:3  %}
-    <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt }}</p>
-        <P>{{ post.date }}</P>
-      </li>
+<head>
+  <link href='https://0xdr3am.github.io/feed.xml' rel='alternate' type='application/atom+xml'>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
 
-  {% endfor %}
-</ul>
+<header>
+  <h1>0xDr3am's Cybersecurity Blog</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/writeups">Write-ups</a>
+    <a href="/tools">Tools</a>
+    <a href="/about">About</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <img src="/assets/images/banner.gif" alt="Cybersecurity Banner">
+    <p>Exploring the depths of cybersecurity, one hack at a time.</p>
+  </section>
+
+  <section class="latest-posts">
+    <h2>Latest Write-ups</h2>
+    <ul>
+      {% for post in site.categories.writeups limit:3 %}
+        <li>
+          <article>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p class="meta">
+              <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+              <span class="tags">{{ post.tags | join: ", " }}</span>
+            </p>
+            <p>{{ post.excerpt }}</p>
+            <a href="{{ post.url }}" class="read-more">Read full write-up</a>
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 0xDr3am's Cybersecurity Blog. All rights reserved.</p>
+</footer>
